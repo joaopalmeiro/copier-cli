@@ -15,6 +15,10 @@ copier "gh:joaopalmeiro/copier-cli" <cli_name>
 - `pipenv run djlint project/* --lint --profile=jinja`
 - `rm -rf demo && pipenv run copier . demo` or `rm -rf demo && pipenv run copier "gh:joaopalmeiro/copier-cli" demo`
 
+## Deployment
+
+- After finishing a new template version, [create a new release in the GitHub repository](https://github.com/joaopalmeiro/copier-cli/releases)
+
 ## Notes
 
 - [Copier](https://github.com/copier-org/copier):
