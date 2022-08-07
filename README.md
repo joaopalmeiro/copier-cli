@@ -1,13 +1,19 @@
 # copier-cli
 
-[Copier](https://github.com/copier-org/copier) template for Python CLIs with Click and Poetry.
+[Copier](https://github.com/copier-org/copier) template for Python CLIs with [Click](https://click.palletsprojects.com/en/8.1.x/) and [Poetry](https://python-poetry.org/).
+
+## Quickstart
+
+```bash
+copier "gh:joaopalmeiro/copier-cli" <cli_name>
+```
 
 ## Development
 
 - `export PIPENV_VENV_IN_PROJECT=1 && pipenv install --python 3.7`
 - `pipenv run copier --version`
 - `pipenv run djlint project/* --lint --profile=jinja`
-- `rm -rf demo && pipenv run copier . demo`
+- `rm -rf demo && pipenv run copier . demo` or `rm -rf demo && pipenv run copier "gh:joaopalmeiro/copier-cli" demo`
 
 ## Notes
 
