@@ -30,7 +30,7 @@ author_tw_username:
 
 author_email:
   type: str
-  help: Your name
+  help: Your email address
   default: "joaopalmeiro@proton.me"
 
 python_package_distribution_name:
