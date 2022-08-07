@@ -30,3 +30,10 @@ copier "gh:joaopalmeiro/copier-cli" <cli_name>
   - `pipenv run djlint project/* --check --profile=jinja`
   - `pipenv run djlint project/* --reformat --profile=jinja`
   - `pipenv run djlint project/\{\{_copier_conf.answers_file\}\}.jinja --reformat --profile=jinja`
+- GitHub topics:
+  - python
+  - template
+  - scaffolding
+  - bootstrapping
+  - copier
+  - copier-template
