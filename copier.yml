@@ -1,10 +1,39 @@
 # https://copier.readthedocs.io/en/latest/configuring/#jinja_extensions
 # https://github.com/hackebrot/jinja2-time
 # https://cookiecutter.readthedocs.io/en/latest/advanced/template_extensions.html
+# https://github.com/pdm-project/copier-pdm/blob/main/copier.yml
 
 _subdirectory: project
+
+cli_name:
+  type: str
+  help: Your CLI name
+
+cli_description:
+  type: str
+  help: Your CLI description
 
 author_name:
   type: str
   help: Your name
   default: "João Palmeiro"
+
+author_gh_username:
+  type: str
+  help: Your GitHub username
+  default: "joaopalmeiro"
+
+author_email:
+  type: str
+  help: Your name
+  default: "joaopalmeiro@proton.me"
+
+python_package_distribution_name:
+  type: str
+  help: Your Python package distribution name (for `pip install NAME`)
+  default: "{{ cli_name|lower|replace('_', '-')|replace(' ', '-') }}"
+
+python_package_import_name:
+  type: str
+  help: Your Python package import name (for `import NAME`)
+  default: "{{ cli_name|lower|replace('-', '_')|replace(' ', '_') }}"

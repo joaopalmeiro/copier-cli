@@ -7,7 +7,6 @@
 - `export PIPENV_VENV_IN_PROJECT=1 && pipenv install --python 3.7`
 - `pipenv run copier --version`
 - `pipenv run djlint project/* --lint --profile=jinja`
-- `pipenv run djlint project/\{\{_copier_conf.answers_file\}\}.jinja --reformat --profile=jinja`
 - `rm -rf demo && pipenv run copier . demo`
 
 ## Notes
@@ -24,3 +23,4 @@
   - [VS Code extension](https://marketplace.visualstudio.com/items?itemName=monosans.djlint)
   - `pipenv run djlint project/* --check --profile=jinja`
   - `pipenv run djlint project/* --reformat --profile=jinja`
+  - `pipenv run djlint project/\{\{_copier_conf.answers_file\}\}.jinja --reformat --profile=jinja`

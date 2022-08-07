@@ -1,0 +1,13 @@
+{
+  "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/flake8heavened",
+
+  // Explorer file nesting
+  // v1.64 (experimental): https://code.visualstudio.com/updates/v1_64#_explorer-file-nesting
+  // v1.67: https://code.visualstudio.com/updates/v1_67#_explorer-file-nesting
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "pyproject.toml": ".copier-answers.yml, poetry.lock",
+    "README.md": "LICENSE"
+  }
+}

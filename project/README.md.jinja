@@ -1,0 +1,39 @@
+# {{ cli_name }}
+
+{{ cli_description }}
+
+## Quickstart
+
+### Installation
+
+Via [pip](https://github.com/pypa/pip):
+
+```bash
+pip install {{ python_package_distribution_name }}
+```
+
+Via [pipx](https://github.com/pypa/pipx):
+
+```bash
+pipx install {{ python_package_distribution_name }}
+```
+
+### Usage
+
+```bash
+
+```
+
+## Development
+
+> [Poetry](https://python-poetry.org/) (version 1.2.0b3)
+
+- `poetry config virtualenvs.in-project true`
+- `poetry install`
+- `poetry run {{ python_package_distribution_name }} --version` / `poetry run {{ python_package_distribution_name }} --help`
+- `poetry check`
+
+## Deployment
+
+- `poetry version minor` or `poetry version patch`
+- `poetry build`
