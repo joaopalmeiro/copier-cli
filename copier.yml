@@ -1,0 +1,10 @@
+# https://copier.readthedocs.io/en/latest/configuring/#jinja_extensions
+# https://github.com/hackebrot/jinja2-time
+# https://cookiecutter.readthedocs.io/en/latest/advanced/template_extensions.html
+
+_subdirectory: project
+
+author_name:
+  type: str
+  help: Your name
+  default: "João Palmeiro"
