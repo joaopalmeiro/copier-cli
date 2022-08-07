@@ -7,3 +7,35 @@ authors = ["{{ author_name }} <{{ author_email }}>"]
 readme = "README.md"
 homepage = "https://github.com/{{ author_gh_username }}/{{ python_package_distribution_name }}"
 repository = "https://github.com/{{ author_gh_username }}/{{ python_package_distribution_name }}"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/{{ author_gh_username }}/{{ python_package_distribution_name }}/issues"
+"Twitter" = "https://twitter.com/{{ author_tw_username }}"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "8.1.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "22.6.0"
+isort = "5.10.1"
+flakeheaven = "3.0.0"
+
+[tool.poetry.scripts]
+{{ python_package_distribution_name }} = "{{ python_package_import_name }}.console:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.flakeheaven]
+format = "grouped"
+max_line_length = 88
+show_source = true
+
+[tool.flakeheaven.plugins]
+pycodestyle = ["+*"]
+pyflakes = ["+*"]

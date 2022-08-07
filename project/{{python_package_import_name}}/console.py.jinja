@@ -1,0 +1,8 @@
+import click
+
+
+@click.command()
+@click.version_option()
+def run():
+    """{{ cli_description }}"""
+    click.echo("Hello, world!")

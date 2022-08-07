@@ -23,6 +23,11 @@ author_gh_username:
   help: Your GitHub username
   default: "joaopalmeiro"
 
+author_tw_username:
+  type: str
+  help: Your Twitter username/handle
+  default: "joaompalmeiro"
+
 author_email:
   type: str
   help: Your name
